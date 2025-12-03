@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Add this in <head> -->
+    <style>
+        /* keep content visible above fixed footer */
+        body { padding-bottom: 80px; }
+        /* consistent image crop without stretching */
+        .project-img {
+            height: 260px;
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+  </head>
+  <body>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Cole's Webworld</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="hobbies.html">Hobbies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+  <a class="nav-link" href="resume.html">Resume</a>
+</li>
+
+                </ul>
+
+                <div class="d-flex ms-auto">
+                    <img
+                    src="../resources/img/cat.webp"
+                    alt="Profile"
+                    class="rounded-circle"
+                    style="width:40px; height:40px;"
+                    />
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <div class="container my-5">
+    <h2 class="mb-4 text-center">Projects</h2>
+
+    <!-- Project 1 -->
+    <div class="row align-items-center mb-5">
+        <div class="col-12 col-md-5">
+            <img src="../resources/img/project1.png" alt="Voxel Game Engine"
+                class="img-fluid rounded shadow-sm project-img">
+            </div>
+            <div class="col-12 col-md-7 mt-3 mt-md-0">
+            <h3 class="h4">Voxel Game Engine</h3>
+            <p>
+                A chunk-based voxel engine with multithreaded world generation that somehow doesn't lag that much.
+                It's basically Minecraft.
+            </p>
+            <ul class="small text-muted mb-0">
+                <li>Godot 4 + GDScript (static typing)</li>
+                <li>Worker thread pool for terrain & meshes</li>
+                <li>High quality programmer art</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Project 2 (image on right for md+ screens) -->
+    <div class="row align-items-center mb-5">
+        <div class="col-12 col-md-7 order-md-1">
+            <h3 class="h4">Check out this Cat</h3>
+            <p>
+                Holy shit
+            </p>
+            <ul class="small text-muted mb-0">
+                <li>Check out this cat</li>
+                <li>Her name is Nala</li>
+                <li>What breed is she? She is a cat</li>
+            </ul>
+            </div>
+            <div class="col-12 col-md-5 order-md-2 mt-3 mt-md-0">
+            <img src="../resources/img/project2.jpeg" alt="Funny cat"
+                class="img-fluid rounded shadow-sm project-img">
+        </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="row align-items-center mb-5">
+        <div class="col-12 col-md-5">
+            <img src="../resources/img/project3.png" alt="Personal Site"
+                class="img-fluid rounded shadow-sm project-img">
+            </div>
+            <div class="col-12 col-md-7 mt-3 mt-md-0">
+            <h3 class="h4">Personal Website (This One!)</h3>
+            <p>
+                A Bootstrap-powered site with a responsive navbar, fixed footer, and
+                reusable components for cards and project layouts. Deployed as static files.
+            </p>
+            <ul class="small text-muted mb-0">
+                <li>Bootstrap 5 grid & utilities</li>
+                <li>Accordions, cards, and sticky footer</li>
+                <li>Image cropping via <code>object-fit: cover</code></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-light text-center text-lg-start mt-5 fixed-bottom">
+      <div class="text-center p-3">
+        © 2025 Cole's Webworld ·
+        <a
+          class="text-decoration-none"
+          href="https://youtu.be/37v82vvlQns?si=qXvfusfweUBaXXcc"
+          target="_blank"
+        >
+          Visit my YouTube Channel
+        </a>
+      </div>
+    </footer>
+
+  </body>
+</html>
